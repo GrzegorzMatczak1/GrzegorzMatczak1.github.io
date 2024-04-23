@@ -1,0 +1,77 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #151515;
+    color: #f6f6f6;
+}
+
+.homebix {
+    background-image: url(home_black.png);
+    margin-left: 15px;
+    margin-top: -65px;
+    width: 3rem;
+    height: 3rem;
+    background-size:35px 35px;
+    background-position: 7px 4px;
+    background-color:white;
+    background-repeat: no-repeat;
+    border-radius: 50px;
+    position:absolute;
+    
+    
+    transition: all .05s;
+}
+
+.homebix:hover {
+    background-image: url(home_white.png);
+    background-color: rgb(41, 41, 41);
+    border: solid white 2px;
+    cursor: pointer;
+}
+
+#slower {
+    transition-delay: 2s;
+}
+#slowerer {
+    transition-delay: 4s;
+}
+#slowest {
+    transition-delay: 6s;
+}
+
+section{
+    display: grid;
+    place-items: center;
+    align-content: center;
+    min-height: 20vh;
+}
+
+.hidden {
+    filter: blur(0.2rem);
+    transform: translateX(-100%);
+    opacity: 0;
+    transition: all 4s;
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+.yt_button {
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 7px;
+    background-color: #000000;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    border: solid #7B7878 2px;
+    transition: all .5s;
+}
+.yt_button:hover {
+    background-color: #7B7878;
+    color: rgb(255, 255, 255);
+    border: solid #ffffff 2px;
+}
+
